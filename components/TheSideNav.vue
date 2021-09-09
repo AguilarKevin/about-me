@@ -1,5 +1,7 @@
 <template>
-  <aside class="flex justify-center">
+  <aside
+    class="flex justify-center items-center absolute z-20 right-20 inset-y-0"
+  >
     <ul class="flex flex-col gap-5">
       <li
         v-for="item in sideNavList"

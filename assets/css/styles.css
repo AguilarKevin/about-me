@@ -25,6 +25,13 @@ html {
   grid-template-areas: 'header' 'main-container';
   grid-template-rows: 35vh 1fr;
 }
+.section-container {
+  width: 500px;
+}
+
+.section-container2 {
+  width: 800px;
+}
 
 .header {
   grid-area: 'header';

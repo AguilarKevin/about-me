@@ -1,6 +1,6 @@
 <template>
-  <div class="container w-full h-full flex item-center justify-end pr-52">
-    <div class="flex flex-col relative">
+  <div class="w-full h-full flex item-center justify-center absolute inset-0">
+    <div class="flex flex-col justify-center">
       <span class="self-start font-semibold text-2xl">web</span>
       <h1 class="hello-big-text">developer</h1>
 
