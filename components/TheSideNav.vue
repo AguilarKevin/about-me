@@ -1,14 +1,16 @@
 <template>
   <aside class="flex justify-center">
-    <ul>
+    <ul class="flex flex-col gap-5">
       <li
         v-for="item in sideNavList"
         :key="item.title"
         class="flex flex-row-reverse items-center gap-3"
-        :class="{ 'text-accent': item.checked }"
+        :class="{ 'text-accent': route === item.link }"
       >
-        <sidebar-item-dot :checked="item.checked" />
-        <span>{{ item.title }}</span>
+        <sidebar-item-dot :checked="route === item.link" />
+        <nuxt-link :to="item.link">
+          <span>{{ item.title }}</span>
+        </nuxt-link>
       </li>
     </ul>
   </aside>
@@ -19,12 +21,17 @@ export default {
   data() {
     return {
       sideNavList: [
-        { title: 'Hello!', checked: true },
-        { title: 'About me', checked: false },
-        { title: 'Skills', checked: false },
-        { title: 'Projects', checked: false },
+        { title: 'Hello!', link: '/' },
+        { title: 'About me', link: '/about' },
+        { title: 'Skills', link: '/skills' },
+        { title: 'Projects', link: '/projects' },
       ],
     }
+  },
+  computed: {
+    route() {
+      return this.$route.path
+    },
   },
 }
 </script>

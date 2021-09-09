@@ -5,7 +5,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'about-me',
+    title: 'AguilarKevin',
     htmlAttrs: {
       lang: 'en',
     },
@@ -25,7 +25,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/tailwind.css', '@/assets/css/styles.css'],
+  css: [
+    '@/assets/css/tailwind.css',
+    '@/assets/css/styles.css',
+    '@/assets/css/anim.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],

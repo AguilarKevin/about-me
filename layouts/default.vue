@@ -4,6 +4,11 @@
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
+      <div id="comets">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
     </div>
 
     <the-header class="header relative z-10" />
