@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.app-logo-text {
+  @apply font-semibold text-5xl uppercase;
+}
+
+.hello-big-text {
+  @apply font-semibold text-6xl uppercase;
+}
