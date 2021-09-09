@@ -1,15 +1,16 @@
 <template>
-  <aside
-    class="flex justify-center items-center absolute z-20 right-20 inset-y-0"
-  >
-    <ul class="flex flex-col gap-5">
+  <aside class="sidenav">
+    <ul class="flex md:flex-col gap-5">
       <li
         v-for="item in sideNavList"
         :key="item.title"
         class="flex flex-row-reverse items-center gap-3"
         :class="{ 'text-accent': route === item.link }"
       >
-        <sidebar-item-dot :checked="route === item.link" />
+        <sidebar-item-dot
+          class="hidden md:block"
+          :checked="route === item.link"
+        />
         <nuxt-link :to="item.link">
           <span>{{ item.title }}</span>
         </nuxt-link>

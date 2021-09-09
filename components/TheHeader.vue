@@ -1,9 +1,9 @@
 <template>
-  <header class="header pt-20 pl-20">
-    <div class="w-min">
+  <header class="header">
+    <div>
       <div class="flex items-center gap-4">
         <p class="app-logo-text">Kevin</p>
-        <div class="app-logo w-8 h-8"><app-logo /></div>
+        <div class="app-logo app-logo-icon"><app-logo /></div>
       </div>
 
       <p class="app-logo-text">Aguilar</p>

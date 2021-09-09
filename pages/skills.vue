@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute inset-0 z-10 w-full flex items-center justify-center">
+  <div class="skills-page">
     <div class="section-container">
       <h1 class="text-accent font-semibold text-3xl">Technologies</h1>
       <p>

@@ -3,9 +3,67 @@
 @tailwind utilities;
 
 .app-logo-text {
-  @apply font-semibold text-4xl uppercase;
+  @apply font-semibold uppercase text-2xl;
+}
+
+.app-logo-icon {
+  @apply w-5 h-5;
 }
 
 .hello-big-text {
-  @apply font-semibold text-6xl uppercase;
+  @apply font-semibold text-3xl uppercase;
+}
+
+.header {
+  @apply pt-10 pl-10;
+}
+
+.sidenav {
+  @apply flex justify-center items-center absolute z-20 inset-x-10 top-28;
+}
+
+.about-page {
+  @apply absolute inset-y-0 inset-x-10 z-10 w-4/5 flex items-center justify-center;
+}
+
+.skills-page {
+  @apply absolute inset-y-0 inset-x-10 z-10 w-4/5 flex items-center justify-center;
+}
+
+.projects-page {
+  @apply absolute inset-x-14 top-36 bottom-10 z-10 w-4/5 flex items-center justify-center pt-20;
+}
+
+@screen md {
+  .app-logo-text {
+    @apply font-semibold uppercase text-4xl;
+  }
+
+  .app-logo-icon {
+    @apply w-8 h-8;
+  }
+
+  .hello-big-text {
+    @apply font-semibold text-6xl uppercase;
+  }
+
+  .header {
+    @apply pt-20 pl-20;
+  }
+
+  .sidenav {
+    @apply flex justify-end items-center absolute z-20 right-20 inset-y-0;
+  }
+
+  .about-page {
+    @apply absolute inset-0 z-10 w-full flex items-center justify-center;
+  }
+
+  .skills-page {
+    @apply absolute inset-y-0 inset-x-10 z-10 w-4/5 flex items-center justify-center;
+  }
+
+  .projects-page {
+    @apply absolute inset-0 z-10 w-full flex items-center justify-center;
+  }
 }
