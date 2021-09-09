@@ -1,30 +1,16 @@
 <template>
   <div class="container">
-    <CThemeProvider>
-      <CColorModeProvider>
-        <CBox font-family="body" as="main">
-          <CReset />
-          <Nuxt />
-        </CBox>
-      </CColorModeProvider>
-    </CThemeProvider>
+    <the-header />
+    <div class="">
+      <Nuxt />
+      <the-side-nav />
+    </div>
   </div>
 </template>
 <script>
-import {
-  CThemeProvider,
-  CColorModeProvider,
-  CReset,
-  CBox
-} from '@chakra-ui/vue'
-
+import TheHeader from '~/components/TheHeader.vue'
 export default {
   name: 'App',
-  components: {
-    CThemeProvider,
-    CColorModeProvider,
-    CReset,
-    CBox
-  }
+  components: { TheHeader },
 }
 </script>
