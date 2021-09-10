@@ -19,7 +19,7 @@
 }
 
 .sidenav {
-  @apply flex justify-center items-center absolute z-20 inset-x-10 top-28;
+  @apply flex items-center absolute z-20 inset-x-10 top-28 h-auto;
 }
 
 .about-page {
@@ -31,20 +31,20 @@
 }
 
 .projects-page {
-  @apply absolute inset-x-14 top-36 bottom-10 z-10 w-4/5 flex items-center justify-center pt-20;
+  @apply absolute inset-x-10 top-44 bottom-10 z-10 w-4/5 flex items-start justify-center;
 }
 
 @screen md {
   .app-logo-text {
-    @apply font-semibold uppercase text-4xl;
+    @apply font-light capitalize text-2xl;
   }
 
   .app-logo-icon {
-    @apply w-8 h-8;
+    @apply w-6 h-full;
   }
 
   .hello-big-text {
-    @apply font-semibold text-6xl uppercase;
+    @apply font-bold text-5xl uppercase;
   }
 
   .header {
@@ -60,10 +60,10 @@
   }
 
   .skills-page {
-    @apply absolute inset-y-0 inset-x-10 z-10 w-4/5 flex items-center justify-center;
+    @apply absolute inset-y-0 inset-x-10 z-10 w-full flex items-center justify-center pt-20;
   }
 
   .projects-page {
-    @apply absolute inset-0 z-10 w-full flex items-center justify-center;
+    @apply absolute inset-0 z-10 w-full h-3/4 flex items-center justify-center;
   }
 }

@@ -23,25 +23,26 @@ body {
   z-index: 1;
   background-color: #fff;
   opacity: 0.7;
-  -webkit-animation: falling 10s 0s infinite;
-  -webkit-animation-timing-function: ease-in;
+  animation: falling 10s 0s infinite;
+  animation-timing-function: ease-in;
 }
 
 #comets i:nth-child(1) {
   left: 50vw;
   height: 73px;
   width: 3px;
+  animation: falling 8s 3s infinite;
   background-color: #fff;
 }
 #comets i:nth-child(3) {
   height: 11px;
   width: 3px;
-  -webkit-animation: falling3 8s 3s infinite;
+  animation: falling3 8s 3s infinite;
   left: 10vw;
   background-color: #fff;
 }
 #comets i:nth-child(2) {
-  -webkit-animation: falling2 6s 1s infinite;
+  animation: falling2 6s 1s infinite;
   left: 30vw;
   height: 70px;
   width: 4px;
@@ -95,10 +96,11 @@ body {
   }
 }
 
-#stars-container {
+#background-container {
   height: 200vh;
   width: 200%;
   overflow: hidden;
+  background: radial-gradient(#020202 1%, #191621 10%, #00010a 40%);
   -webkit-transform: translate(-50, -50%);
   -ms-transform: translate(-50, -50%);
   -o-transform: translate(-50, -50%);
@@ -109,6 +111,7 @@ body {
   width: 1px;
   height: 1px;
   background: transparent;
+
   box-shadow: 0 1589px 1429px #fff, 1613px 1501px #fff, 1021px 1017px #fff,
     1124px 287px #fff, 1596px 483px #fff, 1415px 810px #fff, 716px 1912px #fff,
     742px 1121px #fff, 357px 816px #fff, 1865px 1256px #fff, 1258px 473px #fff,

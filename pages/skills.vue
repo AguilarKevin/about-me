@@ -8,6 +8,7 @@
         veritatis vitae, sunt aut voluptatem. Facere ipsum at velit, libero
         quasi quae expedita cum!
       </p>
+      <skills-card-icons />
     </div>
   </div>
 </template>

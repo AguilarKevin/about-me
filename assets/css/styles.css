@@ -1,5 +1,4 @@
 html {
-  background-color: #161720;
   color: white;
   height: 100vh;
   overflow: hidden;
@@ -22,9 +21,6 @@ html {
 
 .main-container {
   height: 100vh;
-  display: grid;
-  grid-template-areas: 'header' 'main-container';
-  grid-template-rows: 35vh 1fr;
 }
 .section-container {
   width: 500px;
@@ -34,22 +30,10 @@ html {
   width: 800px;
 }
 
-.header {
-  grid-area: 'header';
-}
-
 .content-container {
   grid-area: 'main-container';
   display: grid;
   padding-top: 48px;
   grid-template-areas: 'content sidenav';
   grid-template-columns: 80% 1fr;
-}
-
-.content-container__content {
-  grid-area: 'content';
-}
-
-.content-container__sidenav {
-  grid-area: 'sidenav';
 }

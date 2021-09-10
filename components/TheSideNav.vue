@@ -1,18 +1,24 @@
 <template>
   <aside class="sidenav">
-    <ul class="flex md:flex-col gap-5">
+    <ul class="flex flex-1 justify-between md:flex-col gap-8">
       <li
         v-for="item in sideNavList"
         :key="item.title"
-        class="flex flex-row-reverse items-center gap-3"
-        :class="{ 'text-accent': route === item.link }"
+        class="flex flex-row-reverse items-center gap-3 transition-all"
+        :class="{ 'text-accent animate-pulse ': route === item.link }"
       >
         <sidebar-item-dot
           class="hidden md:block"
           :checked="route === item.link"
         />
         <nuxt-link :to="item.link">
-          <span>{{ item.title }}</span>
+          <span
+            class="font-semibold transition-all"
+            :class="{
+              'md:text-2xl font-bold': route === item.link,
+            }"
+            >{{ item.title }}</span
+          >
         </nuxt-link>
       </li>
     </ul>
