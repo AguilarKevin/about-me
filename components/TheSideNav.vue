@@ -33,7 +33,6 @@ export default {
         { title: 'Hello!', link: '/' },
         { title: 'About me', link: '/about' },
         { title: 'Skills', link: '/skills' },
-        { title: 'Projects', link: '/projects' },
       ],
     }
   },

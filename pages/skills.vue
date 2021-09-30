@@ -1,12 +1,10 @@
 <template>
   <div class="skills-page">
     <div class="section-container">
-      <h1 class="text-accent font-semibold text-3xl">Technologies</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        consectetur adipisci repudiandae hic, reiciendis eius temporibus
-        veritatis vitae, sunt aut voluptatem. Facere ipsum at velit, libero
-        quasi quae expedita cum!
+      <h1 class="text-accent font-semibold text-3xl">What I Do</h1>
+      <p class="mt-4 text-lg">
+        Currently I am dedicated to developing websites with laravel framework
+        as a Back-end and vue or react on the Front-end
       </p>
       <skills-card-icons />
     </div>
