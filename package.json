@@ -18,7 +18,7 @@
     "autoprefixer": "^10.3.7",
     "core-js": "^3.18.3",
     "nuxt": "^2.15.7",
-    "postcss": "^8.3.9",
+    "postcss": "^8.3.10",
     "push-dir": "^0.4.1",
     "tailwindcss": "^2.2.17"
   },
