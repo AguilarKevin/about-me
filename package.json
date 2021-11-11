@@ -16,7 +16,7 @@
     "@nuxtjs/emotion": "^0.1.0",
     "@nuxtjs/tailwindcss": "^4.2.1",
     "autoprefixer": "^10.3.7",
-    "core-js": "^3.18.3",
+    "core-js": "^3.19.1",
     "nuxt": "^2.15.7",
     "postcss": "^8.3.9",
     "push-dir": "^0.4.1",
